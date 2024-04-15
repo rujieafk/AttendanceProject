@@ -225,42 +225,7 @@ function App() {
           </div>
         </form>
       </div>
-      // <div className="box">
-      //   <div>
-      //     <h2 className="titleNames1">Guest List </h2>
-      //     <div className="guess-border">
-          
-      //       // {thisResultList && thisResultList.length > 0 ? (
-      //       //   <div className="table-wrapper">
-      //       //     <table className="custom-table">
-      //       //       <thead>
-      //       //         <tr>
-      //       //           <th>Employee ID</th>
-      //       //           <th>Name</th>
-      //       //           <th>Attendance</th>
-      //       //           <th>Time</th>
-      //       //         </tr>
-      //       //       </thead>
-      //       //       <tbody>
-      //       //         {thisResultList.map((employee, index) => (
-      //       //           <tr key={index}>
-      //       //             <td style={{ textAlign: 'center' }}>{employee.employeeId}</td>
-      //       //             <td>{employee.name}</td>
-      //       //             <td>{employee.attendance ? <AiFillCheckCircle/> : <AiFillCloseCircle/>}</td>
-      //       //             <td>{employee.time}</td>
-      //       //           </tr>
-      //       //         ))}
-      //       //       </tbody>
-      //       //     </table>
-      //       //   </div>
-      //       // ) : (
-      //       //   <p>No guests registered yet.</p>
-      //       // )}
-
-      //     </div>
-      //   </div>
-      // </div>
-    // </div>
+    </div>
   );
 }
 
