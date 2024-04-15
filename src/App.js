@@ -23,7 +23,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    fetchGuestList(); // Run fetchGuestList on every render
+    // fetchGuestList(); // Run fetchGuestList on every render
   }, [thisGuestList]); // Add thisGuestList as a dependency to rerun the effect
 
   const fetchEventName = async () => {
@@ -54,25 +54,25 @@ function App() {
     setTime(resultCurrentTime);
   };
 
-  const fetchGuestList = async () => {
-    try {
-        const response = await fetch('http://localhost:5000/getGuestList', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ eventId: thisGuestList })
-        });
-        if (!response.ok) {
-            throw new Error('Failed to fetch guest list data');
-        }
-        const responseData = await response.json();
-        console.log(responseData);
-        setResultList(responseData)
-    } catch (error) {
-        console.error('Error:', error.message);
-    }
-  };
+  // const fetchGuestList = async () => {
+  //   try {
+  //       const response = await fetch('http://localhost:5000/getGuestList', {
+  //           method: 'POST',
+  //           headers: {
+  //               'Content-Type': 'application/json',
+  //           },
+  //           body: JSON.stringify({ eventId: thisGuestList })
+  //       });
+  //       if (!response.ok) {
+  //           throw new Error('Failed to fetch guest list data');
+  //       }
+  //       const responseData = await response.json();
+  //       console.log(responseData);
+  //       setResultList(responseData)
+  //   } catch (error) {
+  //       console.error('Error:', error.message);
+  //   }
+  // };
 
   const handleChange = (e) => {
     const { id, value } = e.target;
